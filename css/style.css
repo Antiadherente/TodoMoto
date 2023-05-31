@@ -1,0 +1,166 @@
+#ribbon{
+    background-color: #007BFF;
+    background-image: repeating-linear-gradient(45deg,transparent,transparent 25px, rgba(99, 88, 201, 0.5) 25px , rgba(131,21,21,0.5) 40px);
+}
+
+#ribbon::after{
+    content: '';
+    background-color: transparent;
+    display: block;
+    height: 20px;
+    width: 50%;
+    margin:0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+}
+
+#birthday{
+    background-color: #007BFF;
+    position: relative;
+    margin-top: -20px;
+    z-index:10;
+    box-shadow: 0 0 50px black;
+    border-radius: 10px;
+}
+
+.text-shadow{
+    text-shadow: 0 3px 3px black;
+}
+
+#separator-ribbon{
+    width:100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+#separator-ribbon .content{
+    width: 150%;
+    height: 100px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.card-border{
+    border:solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+.card-border:hover{
+    transform: scale(1.20);
+}
+
+#games{
+    background: white;
+    background: linear-gradient(0deg,white 0%, lightblue 57%);
+    background-repeat: repeat-x;
+    background-size: 75%;
+    margin-top: -20px;
+}
+
+#separator-amiibos{
+    width: 100%;
+    overflow: hidden;
+    position:relative;
+    z-index:2;
+}
+
+
+.clasereloca{
+    background-image: linear-gradient(to bottom, #ffffff, rgb(160, 211, 228) 57%);
+}
+
+.amiibo{
+    cursor:pointer;
+    transition: all ease-out 0.4s;
+}
+
+.amiibo:hover{
+    transform: scale(1.1);
+}
+
+.amiibo-name{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding-top: 20px;
+    margin: 0;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+
+:root {
+    /* dark shades */
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+    /* primary/main color */
+    --clr-primary-5: hsl(205, 78%, 60%);
+    /* lighter shades */
+    --clr-primary-6: hsl(205, 89%, 70%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-8: hsl(205, 86%, 81%);
+    --clr-primary-9: hsl(205, 90%, 88%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+    /* darkest grey */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+    /* grey */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-black: #222;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+
+.btn-hero {
+    margin: 10px;
+    font-family: var(--ff-primary);
+    background: transparent;
+    color: var(--clr-black);
+    transition: var(--transition);
+    border: 2px solid var(--clr-black);
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 1px 1px;
+}
+.btn-hero:hover {
+    color: var(--clr-white);
+    background: var(--clr-black);
+}
+
+.carousel-slide {
+    transition: opacity 0.5s ease-in-out;
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .carousel-slide.active {
+    opacity: 0;
+    transform: translateX(100%);
+  }
